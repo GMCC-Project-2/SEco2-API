@@ -12,16 +12,14 @@ exports.getData = async (req, res) => {
 
 exports.getExports = async (req, res) => {
   try {
-    /*:FIXME: 
-    - Create a variable to store response from original API
-    - Create a While Condition to keep running while we have a SKIP answer at the end of the response
-    - Create a variable to store API URL or partialURL
+    /*FIXME: 
+    - Filter applied in this way dont work:  https://api.uktradeinfo.com/Exports?($filter=MonthId ge 201901 and MonthId le 201912)
+    - But if we apply the filter without parentheses and only for one condition it works
     */
 
     const resultAggregation = [];
-    let urlChange = "https://api.uktradeinfo.com/Export";
-    let count = 0
-
+    let urlChange =
+      "https://api.uktradeinfo.com/Export?$filter=MonthId eq 201901";
 
     while (urlChange != null) {
       //axios works like a postman on javascript code

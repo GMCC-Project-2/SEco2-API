@@ -1,6 +1,41 @@
 # SEco2-API
+<div align="center">
+  <img src="./assets/skillscity-logo.png"  height="150px"/>
 
-How i've created the NodeJS API from scratch:
+<sub>Created by ***[@Brunastephane](https://github.com/brunastephane)***</sub>
+
+</div>          
+
+# Tools
+<div align="center">
+
+| NodeJS | ExpressJS | NPM |
+| ------------- | ------------- |------------- |
+| <img height="50px" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" /> | <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original-wordmark.svg" /> | <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/npm/npm-original-wordmark.svg" /> |
+
+</div> 
+
+# Pre-Requisites
+- [NVM](https://github.com/nvm-sh/nvm)
+- [Postman](https://www.postman.com/downloads/)
+
+
+# Getting Started
+
+```bash
+$ nvm use                                   #To make sure you are using the right node version
+$ npm i                                     #To install all dependencies
+```
+
+
+# Running
+
+```bash
+$ npm run start:dev                         # Run watching code changes. (Recommended when running during development)
+$ npm run start                             # Run without watching code changes
+```
+
+# How i've created the NodeJS API from scratch
 
 1 - Create a new repository on Github
 

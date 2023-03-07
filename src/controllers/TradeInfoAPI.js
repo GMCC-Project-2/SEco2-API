@@ -19,7 +19,7 @@ exports.getExports = async (req, res) => {
 
     const resultAggregation = [];
     let urlChange =
-      "https://api.uktradeinfo.com/Export?$filter=MonthId eq 202211";
+      "https://api.uktradeinfo.com/Export?$filter=MonthId ge 201907 and MonthId le 201912";
 
     while (urlChange != null) {
       //axios works like a postman on javascript code
@@ -97,7 +97,7 @@ exports.getDate = async (req, res) => {
 
     const resultAggregation = [];
     let urlChange =
-      "https://api.uktradeinfo.com/Date?$filter=MonthId eq 202211";
+      "https://api.uktradeinfo.com/Date?$filter=MonthId ge 201907 and MonthId le 201912";
 
     while (urlChange != null) {
       //axios works like a postman on javascript code
